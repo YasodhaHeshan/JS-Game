@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1a1c20 0%, #0f1012 100%);
+    font-family: 'Press Start 2P', system-ui;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 4px solid #30336b;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(48, 51, 107, 0.3);
+    background: linear-gradient(0deg, #2c3e50 0%, #3498db 100%);
+}
+
+.hud {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.timer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.health-bar {
+    height: 30px;
+    width: 300px;
+    background: #c0392b;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.health-bar .fill {
+    height: 100%;
+    background: #27ae60;
+    transition: width 0.3s ease;
+} 

@@ -1,0 +1,22 @@
+{
+  "name": "multiplayer-fighting-game",
+  "version": "1.0.0",
+  "description": "A browser-based multiplayer fighting game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "vite": "^5.0.12",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+} 
